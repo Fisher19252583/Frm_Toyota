@@ -3,35 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Toyota</title>
 </head>
 <body>
-    <table border="4">
+    <h1 align="center" > Consultas</h1>
+
+    <div style="text-align:center;">
+    <table border="3" style="margin: 0 auto;" WIDTH="50%" HEIGHT="50%">
         <tr>
-            <td colspan="2">Datos Personales</td>
-            
+           <td align="left" style="color:#070808;font-size:20px;" colspan="2">Datos Personales</td>
+     
         </tr>
             <tr>
-                <td><input type="text" placeholder="NOMBRES"</td>
-                <td><input type="text" placeholder="APELLIDOS"</td>
+                <td WIDTH="50" HEIGHT="50"><input type="text" id="name" style="width: 95%;"  placeholder="NOMBRES" ></td>
+                <td WIDTH="50" HEIGHT="50"><input type="text" id="apellido" style="width: 95%;" placeholder="APELLIDOS"></td>
             </tr>
             <br>
             <tr>
-                <td><input type="number" placeholder="DNI"</td>
-                <td><input type="number" placeholder="TELEFONO"</td>
+                <td WIDTH="50" HEIGHT="50"><input type="number" id="dni" style="width: 95%;" placeholder="DNI"></td>
+                <td WIDTH="50" HEIGHT="50"><input type="number" id="telefono" style="width: 95%;" placeholder="TELEFONO"></td>
             </tr>
             <br>
             <tr>
-                <td>Celular</td>
-                <td>Correo</td>
+                <td WIDTH="50" HEIGHT="50"><input type="number" id="celular" style="width: 95%;" placeholder="Celular"></td>
+                <td WIDTH="50" HEIGHT="50"><input type="text" id="correo" style="width: 95%;" placeholder="Correo"></td>
             </tr>
             <br>
             <tr>
-                <input type="text" class="address" id="address" placeholder="DIRECCION" style="width: 340px;">
-                <!-- <td>Direccion </td> -->
+                <td WIDTH="50" HEIGHT="50" colspan="2"><input type="text" class="address" id="address" style="width: 95%;" placeholder="DIRECCION" style="width: 340px;"></td>
             </tr>
-            <br>
+            <table border="0" style="margin: 0 auto;" WIDTH="50%" HEIGHT="50%">   
+            <tr>
+                <td WIDTH="30" HEIGHT="30">
+                <select>
+                    <option value="departamento">Departamento </option>
+                    <option value="La Libertad">La Libertad</option>
+                    <option class="Lima">Lima</option>
+                    <option class="Lambayeque">Lambayeque</option>
+                </td>
+                <td WIDTH="30" HEIGHT="30">
+                    <select>
+                        <option value="consencionario">Concesionario </option>
+                    </select>
+                </td>
+                <td WIDTH="30" HEIGHT="30">
+                    <select>
+                        <option value="consulta">Motivo de Consulta </option>
+                    </select>
+                </td>
+                </select>
+                
+            </tr>
+            </table>
     </table> 
-
+    <table border="3" style="margin: 0 auto;" WIDTH="50%" HEIGHT="50%">
+        <tr>
+           <td align="left" style="color:#070808;font-size:20px;" colspan="3">Datos del Vehiculo</td>
+        </tr>
+        <tr>
+            <td WIDTH="50" HEIGHT="50"><input type="text" id="placa" style="width: 95%;"  placeholder="PLACA" ></td>
+            <td WIDTH="50" HEIGHT="50"><input type="text" id="propietario" style="width: 95%;" placeholder="PROPIETARIO"></td>
+            <td WIDTH="50" HEIGHT="50"><input type="text" id="modelo" style="width: 95%;" placeholder="MODELO"></td>
+        </tr>
+    </table>
+    <br>
+    <table border="2" style="margin: 0 auto;" WIDTH="50%" HEIGHT="50%">
+             <td><textarea name="comentarios" rows="5" cols="100">MENSAJE</textarea></td>
+    </table>
+    <br>
+    <input type="button" id="borra" style="width: 10%; background-color: red; color: aliceblue;" value="Borrar"  />
+    <input type="button" id="envia" style="width: 10%; background-color: red; color: aliceblue;" value="Enviar" />
 </body>
 </html>
